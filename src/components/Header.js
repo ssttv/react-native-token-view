@@ -1,7 +1,7 @@
 import React from  'react';
-import { View, Text } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 
-constHeader = () => {
+const Header = () => {
   return (
     <View style={styles.headerContainer}>
       <Text style={styles.header}>Digital Token App</Text>
@@ -9,12 +9,11 @@ constHeader = () => {
   )
 }
 
-
 const styles = StyleSheet.create({
 
   headerContainer: {
     display: 'flex',
-    marginTOp: 55,
+    marginTop: 55,
     alignItems: 'center'
   },
   header: {

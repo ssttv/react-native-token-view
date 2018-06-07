@@ -1,18 +1,18 @@
-import { React, Component } from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { Header } from '.src/components/Header';
+import { Header } from './src/components/';
 
-export default class App extends React.Component {
+export default class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
+      <View>
         <Header />
       </View>
     );
   }
 }
 
-const styles = StyleSheet.create({
+/*const styles = StyleSheet.create({
 
   container: {
     flex: 1,
@@ -20,4 +20,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+});*/
