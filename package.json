@@ -20,13 +20,14 @@
     "postinstall": "remotedev-debugger --hostname localhost --port 5678 --injectserver"
   },
   "remotedev": {
-  "hostname": "localhost",
-  "port": 5678
+    "hostname": "localhost",
+    "port": 5678
   },
   "jest": {
     "preset": "jest-expo"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "expo": "^27.0.1",
     "react": "16.3.1",
     "react-native": "~0.55.2",
@@ -34,9 +35,5 @@
     "redux": "^4.0.0",
     "redux-promise": "^0.6.0",
     "redux-thunk": "^2.3.0"
-  },
-  "remotedev": {
-  "hostname": "localhost",
-  "port": 5678
-}
+  }
 }
