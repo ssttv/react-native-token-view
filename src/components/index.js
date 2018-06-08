@@ -1,3 +1,4 @@
 import Header from './Header';
+import TokenContainer from './TokenContainer';
 
-export { Header };
+export { Header, TokenContainer };
