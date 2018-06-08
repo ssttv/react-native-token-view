@@ -6,9 +6,9 @@ import FetchTokenData from './../Actions/FetchTokenData'
 class TokenContainer extends Component {
 
   componentDidMount() {
-    this.props.FetchCoinData();
+    this.props.FetchTokenData();
   }
-  
+
   render() {
     return (
       <View>
