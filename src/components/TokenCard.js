@@ -2,17 +2,31 @@ import React from 'react';
 import {
   View,
   Text,
-  StyleSheet
+  StyleSheet,
+  Image
 } from 'react-native';
+import { images } from '../Utils/CoinIcons';
 
-const TokenCard = (props) => {
+const styles = StyleSheet.create({
+
+})
+
+const { container, image, bold } = styles;
+
+const TokenCard = ({ symbol, token_name, price_usd, percent_change_24h, percent_change_7d }) => {
   return(
-    <View>
-      <Text>{props.symbol}</Text>
-      <Text>{props.price_usd}</Text>
-      <Text>{props.percent_change_24h}</Text>
+    <View style={container}>
+      <Image
+        style={styles.image}
+        source=({ url: images[symbol] })
+      />
+      <Text>{symbol}</Text>
+      <Text>{token_name}</Text>
+      <Text>{price_usd} <Text style={bold}>$</Text></Text>
+      <Text>Change past 24 hours: {percent_change_24h}</Text>
+      <Text>Change past 7 days: {percent_change_7d}</Text>
     </View>
-  )
+  );
 }
 
 export default TokenCard;
