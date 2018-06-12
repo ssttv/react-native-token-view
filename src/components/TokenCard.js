@@ -9,7 +9,7 @@ import { images } from '../Utils/CoinIcons';
 
 const styles = StyleSheet.create({
   container: {
-
+    display: 'flex',
   },
   image: {
     width: 40,
