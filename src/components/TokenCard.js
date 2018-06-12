@@ -8,6 +8,16 @@ import {
 import { images } from '../Utils/CoinIcons';
 
 const styles = StyleSheet.create({
+  container: {
+
+  },
+  image: {
+    width: 40,
+    height: 40
+  },
+  bold: {
+    fontWeight: 'bold'
+  }
 
 })
 
