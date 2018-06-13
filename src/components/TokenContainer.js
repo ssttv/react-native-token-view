@@ -9,10 +9,27 @@ class TokenContainer extends Component {
     this.props.FetchTokenData();
   }
 
+  renderTokenCards() {
+    const { token } = this.props;
+    console.log(token);
+    return token.data.map((token, index) =>
+    <TokenCard
+      key={index}
+      token_name={token.name}
+      symbol={token.symbol}
+      percent_change_24h={token.percent_change_24h}
+      percent_change_7d={token.percent_change_7d}
+    />
+  )
+  }
+
   render() {
+
+    const { token } = this.props;
+
     return (
       <View>
-        <Text>Container</Text>
+        {this.renderTokenCards()}
       </View>
     )
   }

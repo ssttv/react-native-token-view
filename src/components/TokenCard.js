@@ -18,7 +18,6 @@ const styles = StyleSheet.create({
   bold: {
     fontWeight: 'bold'
   }
-
 })
 
 const { container, image, bold } = styles;
