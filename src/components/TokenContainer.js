@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { View, Text } from "react-native";
+import { View, Text, ScrollView } from "react-native";
 import FetchTokenData from "./../Actions/FetchTokenData";
 import Spinner from "react-bative-loading-spinner-overlay";
 
@@ -39,7 +39,14 @@ class TokenContainer extends Component {
       )
     }
 
-    return <View>{this.renderTokenCards()}</View>;
+    return <ScrollView contentContainerStyle={contentContainer}>{this.renderTokenCards()}</ScrollView>;
+  }
+}
+
+const styles= {
+  contentContainer: {
+    paddingBottom: 100,
+    paddingTop: 55
   }
 }
 
