@@ -26,6 +26,19 @@ class TokenContainer extends Component {
   render() {
     const { token } = this.props;
 
+    if(token.isFetching) {
+      return(
+        <View>
+          <Spinner
+            visible={token.isFetching}
+            textContent={"Loading"}
+            textStyle={{color: '#253145'}}
+            animation="fade"
+          />
+        </View>
+      )
+    }
+
     return <View>{this.renderTokenCards()}</View>;
   }
 }
