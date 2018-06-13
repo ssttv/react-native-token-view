@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { View, Text } from "react-native";
 import FetchTokenData from "./../Actions/FetchTokenData";
-import spinner from "react-bative-loading-spinner-overlay";
+import Spinner from "react-bative-loading-spinner-overlay";
 
 class TokenContainer extends Component {
   componentDidMount() {
